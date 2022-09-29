@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Oswald:wght@300;500&display=swap');
+    </style> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Oswald:wght@300;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>NFT MARKETPLACE</title>
+</head>
+<header>
+</header>
+<body>
+    <video class="video" autoplay loop id="myVideo">
+        <source class="blur" src="/video/video.mp4" type="video/mp4" muted="true">
+    </video>
+    <div class="linha">
+        <div class="column-50" id="login">
+            <span id="alinhamentoLeft">
+                <div>
+                    <h2 class="singup">
+                        CADASTRE-SE
+                    </h2>
+                </div>
+    
+                <div>
+                    <h3 class="login-title">Nome completo</h3>
+                    <input placeholder="Insira seu nome" type="text" name="name" id="campo">
+                </div>
+                <div>
+                    <h3 class="login-title">Email</h3>
+                    <input placeholder="Insira seu e-mail" type="email" name="email" id="campo">
+                </div>
+                <div>
+                    <h3 class="login-title">Senha</h3>
+                    <input placeholder="Insira caracteres alfanuméricos, hífens e sublinhados" type="password" name="senha" id="campo">
+                </div>
+                <div>
+                    <h3 class="login-title">Confirmar senha</h3>
+                    <input placeholder="Insira caracteres alfanuméricos, hífens e sublinhados" type="password" name="senha" id="campo">
+                </div>
+                <div id="buton-shade">
+                    <button type="button" disabled="" id="SignUpButton" data-test-id="sign-up-button">Cadastrar-se</button>
+                </div>
+                </span>
+            </span>
+        </div>
+        <div class="column-50" id="descricao">
+            <h1 class="description-title" id="description-title"> 
+                COMPRE, VENDA E MINTE
+            </h1>
+            <p class="description-p">
+                TUDO QUE VOCÊ PRECISA EM UMA ÚNICA PLATAFROMA
+            </p>
+            <p class="description-p">
+                Somos uma plataforma completa com diversas soluções. 
+                Teste agora mesmo, totalmente grátis! 
+            </p>
+        </div> 
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBUnLxRU2ZzTeiAQN1T-4IQDxcdsZZrVTw",
+          authDomain: "site-arkad.firebaseapp.com",
+          projectId: "site-arkad",
+          storageBucket: "site-arkad.appspot.com",
+          messagingSenderId: "876128582279",
+          appId: "1:876128582279:web:c8613af9e7f63ac6529622",
+          measurementId: "G-7YDCQYEJY5"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script> 
+</body>
+</html>
