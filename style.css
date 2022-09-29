@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Oswald:wght@300;500&display=swap');
+
+
+h1, h2, h3 {
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 20%;   
+}
+
+#alinhamentoLeft {
+    padding: 2em;
+    align-items: center;
+    width: 40vw;
+    height: 35em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    color: aliceblue;
+    background-color: black;
+
+}
+
+
+.linha {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.column-50 {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.video{
+    max-width: 400px 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(150px);
+}
+
+#title-account {
+    align-items: baseline;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entrar {
+    text-decoration: none;
+    width: 15px;
+    height: 45px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#login {
+    transform: translateY(+5em);
+    width: 50%;
+    height: 65%;
+    box-shadow: 5px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background-color: aliceblue;
+    margin: auto;
+    text-align: center;
+    opacity: 85%;
+}
+
+#descricao {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.description-title {
+    transform: translateY(-10vw);
+    display: flex;
+    margin: auto;
+    align-items: top;
+    color: aliceblue;
+    font-weight: bolder;
+
+}
+
+.description-p {
+    transform: translateY(-10vw);
+    color: aliceblue;
+    font-family: 'Dosis', sans-serif;
+}
+
+.singup {
+    font-size:xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.login-title {
+    width: 100%;
+
+    text-align: left;
+    font-size: medium;
+    font-style: normal;
+}
+
+#campo {
+    display: flex;
+    position: relative;
+    align-items: left;
+    border: 1px, #eff5ff;
+    border-radius: 5px;
+    width: 100%;
+    height: 5vh;  
+    font-family: 'Dosis', sans-serif;
+    background-color: #eff5ff;
+}
+
+#buton-shade {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 2em;
+    width: 80%;
+    height: 7vh;
+    margin: auto;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#SignUpButton {
+    width: 100%;
+    height: 7vh;
+    position: relative;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+@media screen and (max-width:600px) {
+    #alinhamentoLeft {
+        padding-top: 3em;
+        align-items: center;
+        width: 40vw;
+        height: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    #campo {
+        transform: translateX(-1.2em);
+        align-items: left;
+        margin: auto;
+        border: 1px, #eff5ff;
+        border-radius: 5px;
+        width: 80%;
+        height: 5vh;  
+        font-family: 'Dosis', sans-serif;
+        background-color: #eff5ff;
+    }
+
+    #buton-shade {
+        display: flex;
+        position: relative;
+        align-items: left;
+        padding-left: -2em;
+        padding-top: 2em;
+        transform: translateX(-0.6em) ;
+        width: 50%;
+        height: 7vh;
+        margin: auto;
+        border-radius: 5px;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .singup {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: left;
+        text-align: left;
+        font-size:x-large;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    h2.singup {
+        transform: translateX(-0.5em);
+        text-align: center;
+    }
+}
+
+
+
